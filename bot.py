@@ -43,7 +43,7 @@ async def pixel_online(update: Update, context: CallbackContext) -> None:
     
     important_players = {"DedSchweppesss", "DevilAsh", "tkirit", "Snowly_Penguin"}
     if any(player in important_players for player in player_names):
-        message += "⚠ **ПИДОРАСЫ В ЗДАНИИ\!**"
+        message += "⚠ **Модераторы на сервере\!**"
 
     await update.message.reply_markdown_v2(message)
 
