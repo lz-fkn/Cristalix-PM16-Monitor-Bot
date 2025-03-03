@@ -21,3 +21,6 @@ python -m pip install mcstatus python-telegram-bot
 	7. Замените `blahblah` в TOKEN на тот, что вам дали на 5 шаге
 	8. Незабудьте сохранить :3
 4. Для запуска приложения просто запустите window.py
+---
+[Пример бота](https://t.me/CristalixPM16Bot)
+[Пример приложения]()
