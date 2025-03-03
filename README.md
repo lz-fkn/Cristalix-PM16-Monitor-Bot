@@ -11,6 +11,7 @@ python -V
 python -m pip install mcstatus python-telegram-bot
 ```
 3. Для запуска телеграм бота сначала надо создать самого бота
+
 	3.1 Найдите в телеграм [@BotFather](https://t.me/BotFather)
 	3.2 /newbot
 	3.3 Введите любой никнейм для бота
