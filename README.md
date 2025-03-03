@@ -17,7 +17,7 @@ python -m pip install mcstatus python-telegram-bot
 	2. /newbot
 	3. Введите любой никнейм для бота
 	4. Введите айди бота, должен заканчиваться на "bot"
-	5. Скопируйте айди, например `0123456789:ABCDEFGHIJKLMNOPQRSTUVWXYZ_1234567`
+	5. Скопируйте токен, например `0123456789:ABCDEFGHIJKLMNOPQRSTUVWXYZ_1234567`
 	6. Откройте bot.py
 	7. Замените `blahblah` в TOKEN на тот, что вам дали на 5 шаге
 	8. Незабудьте сохранить :3
