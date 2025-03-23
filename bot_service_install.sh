@@ -12,18 +12,14 @@ if [ $(id -u) -ne 0 ]; then
   exit 1
 fi
 
-# Установка Python и venv, если не установлены
-
 echo "ща качнем хлам (python3, venv, pip."
 apt update && apt install -y python3 python3-venv python3-pip
 
-# Создание виртуального окружения
 if [ ! -d "$VENV_DIR" ]; then
   echo "колдую заворот кишок (venv)..."
   python3 -m venv "$VENV_DIR"
 fi
 
-# Активация окружения и установка зависимостей
 source "$VENV_DIR/bin/activate"
 echo "ебашу на дачу (пакеты)..."
 pip install --upgrade pip
@@ -31,7 +27,6 @@ pip install python-telegram-bot mcstatus
 
 deactivate
 
-# Создание systemd unit файла
 cat <<EOF > "$SERVICE_FILE"
 [Unit]
 Description=Telegram Bot Service
@@ -49,7 +44,6 @@ EOF
 
 echo "я сделал блядский $SERVICE_FILE"
 
-# Запуск сервиса
 systemctl daemon-reload
 systemctl enable $BOT_NAME
 systemctl start $BOT_NAME
